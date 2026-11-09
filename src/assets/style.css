@@ -1,0 +1,54 @@
+:root{--bg:#f4f7f2;--surface:#ffffff;--ink:#243028;--muted:#5f6d62;--accent:#4f7a5a;--accent2:#8a6b3d;--line:#dce6d8;--head:'Nanum Myeongjo', Georgia, serif;--body:'Noto Sans KR', system-ui, sans-serif;--radius:10px;--header:#ffffff}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.7 var(--body);word-break:keep-all;overflow-wrap:break-word}
+a{color:var(--accent)}
+a:hover{color:var(--accent2)}
+img{max-width:100%;height:auto}
+.wrap{max-width:46rem;margin:0 auto;padding:0 1.15rem}
+.skip{position:absolute;left:-999px}.skip:focus{left:1rem;top:1rem;background:#fff;padding:.5rem;z-index:9}
+.site-header{background:var(--header);border-bottom:3px solid var(--accent)}
+.header-inner{display:flex;flex-wrap:wrap;gap:.5rem 1.25rem;align-items:center;justify-content:space-between;padding-top:1rem;padding-bottom:1rem}
+.brand{font:700 1.35rem/1.2 var(--head);text-decoration:none;color:var(--ink);letter-spacing:-.01em}
+nav{display:flex;flex-wrap:wrap;gap:.25rem 1rem}
+nav a{color:var(--ink);text-decoration:none;font-size:.95rem}
+nav a:hover{text-decoration:underline;color:var(--ink)}
+main{padding-top:2rem;padding-bottom:3rem;min-height:60vh}
+h1,h2,h3{font-family:var(--head);line-height:1.3;color:var(--ink);letter-spacing:-.02em}
+h1{font-size:clamp(1.7rem,4.5vw,2.35rem);margin:.2rem 0 .6rem}
+h2{font-size:1.35rem;margin-top:2.1rem}
+h3{font-size:1.1rem}
+.hero{padding:1.5rem 0 1rem;border-bottom:1px solid var(--line);margin-bottom:1.5rem}
+.hero p{font-size:1.05rem;color:var(--muted);max-width:38rem}
+.section-title{font-size:.95rem;letter-spacing:.06em;color:var(--accent2);margin-bottom:.8rem}
+.post-list{list-style:none;padding:0;margin:0;display:grid;gap:1rem}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:1rem 1.2rem}
+.card h3{margin:.1rem 0 .4rem;font-size:1.2rem}
+.card h3 a{color:var(--ink);text-decoration:none}
+.card h3 a:hover{color:var(--accent)}
+.card p{margin:.2rem 0;color:var(--muted)}
+.meta{font-size:.85rem;color:var(--muted);margin:0}
+.lede{font-size:1.1rem;color:var(--muted)}
+.prose{overflow-wrap:break-word}
+.prose li{margin:.35rem 0}
+.prose blockquote{margin:1.2rem 0;padding:.6rem 1rem;border-left:4px solid var(--accent2);background:var(--surface)}
+.prose table{border-collapse:collapse;width:100%;display:block;overflow-x:auto;font-size:.95rem}
+.prose th,.prose td{border:1px solid var(--line);padding:.45rem .6rem;text-align:left;vertical-align:top}
+.prose th{background:var(--surface)}
+.note{background:var(--surface);border:1px dashed var(--accent2);border-radius:var(--radius);padding:.8rem 1rem}
+.post-foot{margin-top:2.5rem;border-top:1px solid var(--line);padding-top:1rem}
+.disclosure{font-size:.9rem;color:var(--muted)}
+.site-footer{border-top:1px solid var(--line);padding:1.5rem 0;font-size:.9rem;color:var(--muted)}
+.site-footer p{margin:.3rem 0}
+.sponsored-note{font-size:.9rem;color:var(--muted);border-left:3px solid var(--line);padding-left:.8rem;margin:1.2rem 0}
+@media (max-width:600px){body{font-size:16px}.header-inner{flex-direction:column;align-items:flex-start}}
+
+.layout-essay .wrap{max-width:38rem}
+.layout-essay .card{border:0;border-bottom:1px solid var(--line);border-radius:0;background:transparent;padding:1rem 0}
+.layout-essay .card h3{font-size:1.35rem}
+.layout-essay .site-header{border-bottom:1px solid var(--line)}
+.layout-essay .eyebrow{font-family:var(--head);color:var(--accent2);margin:0 0 .5rem}
+.layout-essay .prose{font-size:1.05rem;line-height:1.9}
+.layout-essay .hero{border-bottom:0;padding-bottom:.5rem}
+.figure{margin:1.8rem 0}.figure img{border-radius:8px;display:block;width:100%}
+.credit{font-size:.78rem;color:var(--muted);margin:.4rem 0 0;font-style:italic}
