@@ -21,7 +21,7 @@ jobs:
         with:
           node-version: 22
           cache: npm
-      - run: npm ci
+      - run: npm ci --omit=optional
       - name: Build
         env:
           SITE_URL: https://markyura22-a11y.github.io/slow-parent-notes
